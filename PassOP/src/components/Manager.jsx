@@ -12,13 +12,18 @@ const Manager = () => {
             </h1>
             <p className='text-green-900 text-lg text-center'>Your own Password Manager</p>
             <div className="flex flex-col p-4 text-black gap-8 items-center">
-            <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" />
+            <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" placeholder='Enter website URL'/>
             <div className="flex w-full justify-between gap-8">
-                <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" />
-                <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" />
+                <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" placeholder='Enter username' />
+                <div className="relative">
+                    <input className='rounded-full border border-green-500 w-full px-4 py1' type="text" name="" id="" placeholder='Enter password' />
+                    <span className='absolute right-[3px] top-[0px] cursor-pointer'>
+                        <img className='p-1' width={26} src="icons/eye.png" alt="eye" />
+                    </span>
+                </div>
 
                 </div>
-                <button className='flex justify-center items-center gap-2 bg-green-600 hover:bg-green-500 rounded-full px-8 py-2 w-fit cursor-pointer'>
+                <button className='flex justify-center items-center gap-2 bg-green-600 hover:bg-green-500 rounded-full px-8 py-2 w-fit cursor-pointer border-2 border-green-900'>
                 <lord-icon
                     src="https://cdn.lordicon.com/efxgwrkc.json"
                     trigger="hover">
